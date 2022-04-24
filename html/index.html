@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/greeting.css">
+<!-- 폰트 시작 컴퓨터체-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<!-- 폰트 끝 -->
+<!-- 폰트 시작 엣날 컴퓨터체 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+<!-- 폰트 끝 -->
+</head>
+    <div class="background"><!-- 전체 감싸기 -->
+        <div> <!-- 상단1 -->
+            <div class="loginKing"> 
+                <div class="Welcome">Welcome to Window
+                </div>
+                <div class="logon">Type a user name to log on to Windows.
+                </div>
+<!--greetings 이름 패스워드-->
+                <img src="./img/8.png" class="loginImg" alt="">
+                <div id="weather">
+                    <span></span>
+                    <span></span>
+                </div>
+                <form class="hidden"  id="login-form" >
+                    
+                    <div class="MiddleMove">
+                        <span class="textUnderline">U</span>ser name:
+                        <input required
+                        maxlength="15" 
+                        type="text" 
+                        placeholder="name">
+                        <input type="submit" value="Ok" class="OK"/>
+                    </div>
+                </form>
+                <h1 class="hidden" id="greeting"></h1>
+                <button type="button" class="hiddenButton"><a>x</a>
+                </button>
+            </div> 
+        </div> <!-- 상단1 -->
+<!-- 이름패스워드 끝 -->
+<!--todo-form 폼 시작-->
+        <div> <!--중단1-->
+            <img  class="todoFormImg" src="./img/10.png" alt="">
+            <span class="todoFormfont">오늘 할 일</span>
+            <div class="todoFormTop">오늘 할 일</div>
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter" required/>
+            </form>
+                <ul id="todo-list"></ul>
+        </div><!--중단1 -->
+<!-- todo-form끝 -->
+
+<!--quote시작 -->
+
+        <div> <!-- 중단2 --> 
+            <div class="OKhidden">
+                <span class="quoteTop">
+                inspire
+                </span>
+                <span class="quoteXImage">
+                </span>
+                <span class="quoteXfont">X</span>
+
+                <div id="quote">  
+                    <span class="quote1"></span>
+                    <span class="quote2"></span>  
+                </div>  
+                <button type="button" class="OkButton">확인</button>  
+            </div>
+        </div> <!-- 중단2 -->
+<!-- quote 끝 -->
+<!-- footer시작 -->
+        <div> <!--하단1  -->
+            <div class="footerKing">
+                <footer class="footer">
+                        <table border="3" class="boderWidth">
+                            <tr>
+                                <td class="FirstWidth">
+                                    시작
+                                    <img class="FirstImage" src="./img/3.png"/>
+                                </td>
+                                <!-- 첫번째칸 -->
+                                <td class="MiddleWidth">오늘 할 일
+                                    <img class="MiddleImage" src="./img/4.png"/>
+                                </td>
+                                <td class="bin"></td>
+                                <!-- 중간칸 -->
+                                <img class="Last_Image1" src="./img/5.png"/>
+                                <img class="Last_Image2" src="./img/6.png"/>
+                                <img class="Last_Image3" src="./img/7.png"/>
+                                <td class="LastWidth" id="clock" >
+                                </td>
+                                <!-- 마지막칸 -->
+                            </tr>
+                        </table>
+                </footer>
+            </div>
+        </div><!-- 하단1 -->
+    </div><!--전체 감싸기-->
+
+
+
+
+
+<!-- script -->
+    <script src="../js/greeting.js"></script>
+    <script src="../js/clock.js"></script>
+    <script src="../js/quots.js"></script>
+    <script src="./background.js"></script>
+    <script src="../js/todo.js"></script>
+    <script src="../js/weather.js"></script>
+</body>
+</html>
